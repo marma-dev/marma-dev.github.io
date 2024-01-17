@@ -603,22 +603,22 @@
     </div>
     <script>
         const queryString = window.location.search;
-        console.log(queryString);
         const urlParams = new URLSearchParams(queryString);
         const org = urlParams.get('org');
-        console.log(org);
         var r = document.querySelector(':root');
         switch(org) {
             case 'microsoft':
                 // code block
                 document.documentElement.style.cssText="--font-highlight:rgb(0,120,212); --navbar-color:rgb(37,36,35); --box-color:rgb(59,58,57)";
                 document.getElementById(org).style.setProperty('display','block');
+				document.getElementById('resumelink').style.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Microsoft.pdf');
                 break;
             case 'google':
-                console.log(r);
+
                 // code block
                 document.documentElement.style.cssText="--font-highlight:#d62d20; --navbar-color:rgb(37,36,35); --color-char1:#0057e7; --color-char2:#d62d20; --color-char3:#ffa700; --color-char4:#0057e7; --color-char5:#008744; --color-char6:#d62d20;";
                 document.getElementById(org).style.setProperty('display','block');
+				document.getElementById('resumelink').style.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Google.pdf');
                 // char1:#0057e7;
                 // char2:#d62d20;
                 // char3:#ffa700;
@@ -628,7 +628,7 @@
 
                 break;
             default:
-                console.log("defaaulrt");
+				document.getElementById('resumelink').style.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume.pdf');
                 // code block
             }
 
