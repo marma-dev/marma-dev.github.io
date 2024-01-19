@@ -90,6 +90,10 @@
                             <img src="/images/microsoft.svg" alt="Microsoft">
                             <p>HOPEFULLY SOON!</p>
                         </div>
+                        <div class="tab-org-links hidden" id="amazon">
+                            <img src="/images/amazon.svg" alt="Amazon">
+                            <p>HOPEFULLY SOON!</p>
+                        </div>
                     </div>
                     <div class="org-desig">
                         <div class="tab-designation active-tab flex-col" id="unisysworkex">
@@ -605,33 +609,39 @@
         const urlParams = new URLSearchParams(queryString);
         const org = urlParams.get('org');
         var r = document.querySelector(':root');
-	var resumebuttons = document.getElementsByClassName("resumelink");
+    var resumebuttons = document.getElementsByClassName("resumelink");
         switch(org) {
             case 'microsoft':
                 // code block
                 document.documentElement.style.cssText="--font-highlight:rgb(0,120,212); --navbar-color:rgb(37,36,35); --box-color:rgb(59,58,57)";
                 document.getElementById(org).style.setProperty('display','block');
-		for(resumebutton of resumebuttons)
-			resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Microsoft.pdf');
+                for(resumebutton of resumebuttons)
+                    resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Microsoft.pdf');
                 break;
             case 'google':
 
                 // code block
                 document.documentElement.style.cssText="--font-highlight:#d62d20; --navbar-color:rgb(37,36,35); --color-char1:#0057e7; --color-char2:#d62d20; --color-char3:#ffa700; --color-char4:#0057e7; --color-char5:#008744; --color-char6:#d62d20;";
                 document.getElementById(org).style.setProperty('display','block');
-		for(resumebutton of resumebuttons)
-			resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Google.pdf');
+                for(resumebutton of resumebuttons)
+                    resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume-Google.pdf');
                 // char1:#0057e7;
                 // char2:#d62d20;
                 // char3:#ffa700;
                 // char4:#0057e7;
                 // char5:#008744;
                 // char6:#d62d20;
+            case 'amazon':
 
+                // code block
+                document.documentElement.style.cssText = "--box-color:#232F3E;--font-highlight:#ff9900; --navbar-color:#1d2834; --color-char1:#ff9900; --color-char2:#ff9900; --color-char3:#ff9900; --color-char4:#ff9900; --color-char5:#ff9900; --color-char6:#ff9900;";
+                document.getElementById(org).style.setProperty('display', 'block');
+                for (resumebutton of resumebuttons)
+                    resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-Amazon.pdf');
                 break;
             default:
-		for(resumebutton of resumebuttons)
-			resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume.pdf');
+        for(resumebutton of resumebuttons)
+            resumebutton.setAttribute('href','/resumes/Manish_Ranjan_Mahanta-Resume.pdf');
                 // code block
             }
 
