@@ -83,8 +83,8 @@ html {
 h4
 {
     color: var(--text-color);
-    letter-spacing: 3px;
-    word-spacing: 10px;
+    letter-spacing: 0.188rem;
+    word-spacing: 0.625rem;
 }
 .container-page{
     color:var(--header-color);
@@ -154,8 +154,10 @@ h4
     color:var(--font-highlight)
 }
 #weblogo{
+    text-decoration: none;
+    color:var(--header-color);
     font-family:'Poppins',sans-serif;
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: bolder;
 }
 .container-body{
@@ -177,18 +179,18 @@ h4
 
 .header-text{
     padding-top: 55vh;
-    font-size: 30px;
+    font-size: 1.875rem;
     align-items:center;
 
 }
 .header-text h5{
     font-family: "futura-lt-w01-light", "futura-lt-w05-light",sans-serif;
-    font-size: 24px;
-    letter-spacing: 8.4px;
+    font-size: 1.5rem;
+    letter-spacing: 0.525rem;
     font-weight: 400;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 3.75rem;
     
 }
 
@@ -222,7 +224,8 @@ h4
 .col-head-2
 {
     flex-basis: 40%;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
     background-color: var(--box-color);
 }
 .mini-bio
@@ -235,16 +238,17 @@ h4
 }
 .mini-bio p{    
     margin: auto;
-    padding-top: 50%;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-top: 20vh;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: medium;
     text-align: center;
     word-spacing: 7px;
-    line-height: 2;
+    line-height: 1.5rem;
     letter-spacing: 1.5px;
 }
 .connect{
+    max-height: 100%;
     margin: auto;
     padding-top: 20%;
     padding-left: 10%;
@@ -282,7 +286,8 @@ h4
 .button
 {
 
-    padding: 15px 40px;
+    padding: 3% 5%;
+    margin-bottom: 2%;
     border-radius: 5px;
     border:1px solid #ababab;
     text-decoration: none;
