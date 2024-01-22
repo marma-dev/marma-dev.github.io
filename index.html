@@ -101,6 +101,10 @@
                             <img src="/images/amazon.svg" alt="Amazon">
                             <p>HOPEFULLY SOON!</p>
                         </div>
+                        <div class="tab-org-links hidden" id="opentext">
+                            <img src="/images/OpenText_logo.svg" alt="OpenText">
+                            <p>HOPEFULLY SOON!</p>
+                        </div>
                     </div>
                     <div class="org-desig">
                         <div class="tab-designation active-tab flex-col" id="unisysworkex">
@@ -678,6 +682,11 @@
                 document.getElementById(org).style.setProperty('display', 'block');
                 for (resumebutton of resumebuttons)
                     resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-Amazon.pdf');
+                break;
+            case 'opentext':
+                document.getElementById(org).style.setProperty('display', 'block');
+                for (resumebutton of resumebuttons)
+                    resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-OpenText.pdf');
                 break;
             default:
                 for (resumebutton of resumebuttons)
