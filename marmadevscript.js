@@ -18,7 +18,7 @@ switch (org) {
             resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-Apple.pdf');
         break;
     case 'commonwealth':
-        //document.documentElement.style.cssText = "--bg-color:#070d0e; --box-color:#232F3E;--font-highlight:#ff9900; --navbar-color:#131921; --color-char1:#ff9900; --color-char2:#ff9900; --color-char3:#ff9900; --color-char4:#ff9900; --color-char5:#ff9900; --color-char6:#ff9900;";
+        document.documentElement.style.cssText = "--font-highlight:#ffcc00;";
         document.getElementById(org).style.setProperty('display', 'block');
         for (resumebutton of resumebuttons)
             resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-CommonWealth.pdf');
