@@ -5,35 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manish Ranjan Mahanta</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div class="container-page flex-row">
-        <nav class="nav flex-col">
-            <a id="weblogo" href="#">Manish.</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <div class="container-page flex-row" >
+        <nav class="nav" id="navid">
+            <a id="weblogo" href="#header" onclick="onNavClose()"><span id="char1">M</span>anish.</a>
+            <ul id="sidemenu">
+                <li onclick="onNavClose()"><a href="#about">About</a></li>
+                <li onclick="onNavClose()"><a href="#experience">Experience</a></li>
+                <li onclick="onNavClose()"><a href="#projects">Projects</a></li>
+                <li onclick="onNavClose()"><a href="#education">Education</a></li>
+                <li onclick="onNavClose()"><a href="#skills">Skills</a></li>
+                <li onclick="onNavClose()"><a href="#achievements">Achievements</a></li>
+                <li onclick="onNavClose()"><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="onNavClose()"></i>
+            </ul>            
+            <i class="fa fa-bars" onclick="onNavOpen()"></i>
+           
         </nav>
-        <div class="container-body flex-col">
+        <div class="container-body flex-col" onclick="onNavClose()">
             <div class="container-body-left">
             </div>
-            <div class="container-body-right">
-                <div id="header" class="right-element flex-col">
+            <div class="container-body-right" >
+                <section id="header" class="right-element flex-col">
                     <div class="col-head-1 flex-row-rev">
                         <div class="header-text">
                             <h5><span id="onceonl">HELLO, I'M</span> </h5>
                             <h1><span id="char1">M</span><span id="char2">a</span><span id="char3">n</span><span
                                     id="char4">i</span><span id="char5">s</span><span id="char6">h</span> Ranjan
-                                <br />Mahanta.</h1>
+                                <br />Mahanta.
+                            </h1>
                             <p>Senior Software Development Engineer</p>
                             <h3><span id="element"></span></h3>
                         </div>
@@ -48,7 +53,7 @@
                             <p><a href="mailto:manishranjanmahanta@gmail.com">Email: manishranjanmahanta@gmail.com</a>
                             </p>
                             <p><a href="tel:+918000537300">Mobile: (+91) 8000537300</a></p>
-                            <div id="socials">
+                            <div class="socials">
                                 <a href="https://github.com/marma-dev" target="_blank" rel="noopener noreferrer">
                                     <img src="/images/github.svg" alt="GitHub.com">
                                 </a>
@@ -58,16 +63,18 @@
                                 </a>
                             </div>
                             <div>
-                                <a class="button resumelink" href="https://">Download Resume</a>
+                                <a class="button button-primary resumelink" href="/resumes/Manish_Ranjan_Mahanta-Resume.pdf">Download Resume</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="about" class="right-element">
-                    <h1 class="sub-title">
-                        About <span>Me</span>
-                    </h1>
-                    <h4>MY BACKGROUND</h4>
+                </section>
+                <section id="about" class="right-element">
+                    <div class="sectiontitle">
+                        <h1 class="sub-title">
+                            About <span>Me</span>
+                        </h1>
+                        <h4>MY BACKGROUND</h4>
+                    </div>
                     <p class="fade-in">
                         7.5+ years of Software development experience in developing and deploying C# .NET & RESTful API
                         projects, leading teams, and collaborating across SCRUM teams and external clients & and
@@ -79,352 +86,340 @@
                         organization with a strong Computer Science background and solid C# development and debugging
                         skills.
                     </p>
-                </div>
-                <div id="experience" class="right-element">
-                    <h1 class="sub-title">Work <span>Experience</span></h1>
-                    <h4>WHERE HAVE I WORKED</h4>
-                    <div class="tab-organization flex-col">
-                        <div class="tab-org-links active-link" onclick="opendesigtab('unisysworkex')">
-                            <img src="/images/Unisys_logo_2022_white.svg" alt="Unisys Corporation">
-                            <p>2016 - PRESENT</p>
-
-                        </div>
-                        <div class="tab-org-links hidden" id="google">
-                            <img src="/images/GoogleLogoSept12015.png" alt="Google">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="microsoft">
-                            <img src="/images/microsoft.svg" alt="Microsoft">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="amazon">
-                            <img src="/images/amazon.svg" alt="Amazon">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="opentext">
-                            <img src="/images/OpenText_logo.svg" alt="OpenText">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="intel">
-                            <img src="/images/intel_logo.svg" alt="Intel">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="apple">
-                            <img src="/images/Apple_logo_black.svg" alt="Apple">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <!--  -->
-                        <div class="tab-org-links hidden" id="apple">
-                            <img src="/images/Apple_logo_black.svg" alt="Apple">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="commonwealth">
-                            <img src="/images/Commonwealth_Bank_Logo.svg" alt="CommonWealth Bank">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="harman">
-                            <img src="/images/Harman_logo.svg" alt="Harman">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="philips">
-                            <img src="/images/Philips_logo_new.svg" alt="Philips">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="qualcomm">
-                            <img src="/images/Qualcomm-Logo.svg" alt="Qualcomm">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="siemens">
-                            <img src="/images/Siemens-logo.svg" alt="Siemens">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
-                        <div class="tab-org-links hidden" id="uber">
-                            <img src="/images/Uber_logo_2018.svg" alt="Uber">
-                            <p>HOPEFULLY SOON!</p>
-                        </div>
+                </section>
+                <section id="experience" class="right-element">
+                    <div class="sectiontitle">
+                        <h1 class="sub-title">Work <span>Experience</span></h1>
+                        <h4>WHERE HAVE I WORKED</h4>
                     </div>
-                    <div class="org-desig">
-                        <div class="tab-designation active-tab flex-col" id="unisysworkex">
-                            <p class="tab-links active-link" onclick="openexptab('seniorengineer')">Senior Engineer</p>
-                            <p class="tab-links" onclick="openexptab('systemsengineer')">Systems Engineer</p>
-                            <p class="tab-links" onclick="openexptab('associateengineer')">Associate Engineer</p>
-                        </div>
-                        <div class="tab-contents active-tab fade-in" id="seniorengineer">
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span>Diagnostic Collection Suite</span>
-                                        <ul>
-                                            <li>
-                                                <p>Took ownership of analysis & articulation of complex issues &
-                                                    technologies in
-                                                    DCS
-                                                    project which collects diagnostics from various servers and sources
-                                                    in large
-                                                    scale distributed Mainframe OS systems environment, greatly reducing
-                                                    manual
-                                                    efforts and improving the ease of debugging.</p>
-                                            </li>
-                                            <li>
-                                                <p>Architected and led the development automated error detection RESTful
-                                                    API for
-                                                    DCS, thereby triggering a smart and fully automated diagnostic
-                                                    collection
-                                                    resulting in early detection & diagnosis and reduction in average
-                                                    issue/bug
-                                                    turnaround time by 25% thereby improving customer experience.</p>
-                                            </li>
-                                            <li>
-                                                <p>Refactored UI/UX design by optimizing & making improvements in
-                                                    JavaScript
-                                                    resulting
-                                                    in a smoother, responsive and better customer/user experience, &
-                                                    fixing UI
-                                                    bugs
-                                                    and
-                                                    issues in the process.</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <span>Firmware Version Service</span>
-                                        <ul>
-                                            <li>
-                                                <p>Responsible for Architecture & System Design for enhancing existing
-                                                    FVS
-                                                    Application,
-                                                    a monolith .NET MVC (REST API) based monitoring/reporting product
-                                                    primarily
-                                                    used
-                                                    to query system firmware details.</p>
-                                            </li>
-                                            <li>
-                                                <p>Increased the reporting output by 10X and performance by 15% by
-                                                    re-architecting
-                                                    core -
-                                                    monitoring & reporting API system design and leveraging algorithmic
-                                                    improvements
-                                                    & design patterns across the product.</p>
-                                            </li>
-                                            <li>
-                                                <p>Fostered a team culture of doing it right the first time by
-                                                    emphasizing on
-                                                    careful analysis,
-                                                    design and architecture discussions before code, and setting high
-                                                    coding
-                                                    standards by stringent
-                                                    code reviews & high coverage Unit Tests.</p>
-                                            </li>
-                                            <li>
-                                                <p>Worked with project managers, developers, quality assurance, and
-                                                    customers to
-                                                    resolve technical issues.</p>
-                                            </li>
-                                            <li>
-                                                <p>Trained and mentored junior developers and engineers, teaching skills
-                                                    in .NET
-                                                    Design Patterns,
-                                                    Virtualization & DevOps and working to improve overall team
-                                                    performance,
-                                                    involving them in
-                                                    architectural and high-level bug discussions to incorporate open,
-                                                    honest,
-                                                    and
-                                                    inclusive approaches to problem-solving</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <span>AWS, Azure & VMware Cloud Adoption</span>
-                                        <ul>
-                                            <li>
-                                                <p>Drove roadmap strategy and definition with guidance from senior
-                                                    leadership
-                                                    for
-                                                    AWS and Azure Cloud Platform adoption & support for Unisys CPF
-                                                    Solutions,
-                                                    leading collaboration across parnter organization to pool expertise
-                                                    in Cloud to provide best
-                                                    possible customer experience. This was key-criteria in acquisition
-                                                    of $144 million
-                                                    client contract for hybrid cloud.</p>
-                                            </li>
-                                            <li>
-                                                <p>Led multiple teams of 3-4 members to evaluate mainframe solution's
-                                                    deployment
-                                                    on native cloud, exploring possibilities & challenges in
-                                                    architecting &
-                                                    migrating OS stack on AWS, Azure & VMware Cloud.</p>
-                                            </li>
-                                            <li>
-                                                <p>Improved processes and customer experience by increasing availability
-                                                    to
-                                                    99.99% and documenting best practices learnt by leading teams to
-                                                    evaluate
-                                                    platform's BCDR capabilities & inducing complex fault-injections.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
+                    <div class="section-content">
+                        <div class="tab-organization dis-col">
+                            <div class="tab-org-links active-link" onclick="opendesigtab('unisysworkex')">
+                                <img src="/images/Unisys_logo_2022_white.svg" alt="Unisys Corporation">
+                                <p>2016 - PRESENT</p>
 
                             </div>
-                        </div>
-
-                        <div class="tab-contents fade-in" id="systemsengineer">
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span>Unisys Mainframe - Inter Server Communication</span>
-                                        <ul>
-                                            <li>
-                                                <p>Improved the architecture & security of inter-platform communication
-                                                    leveraging use of Schannel (TLS/SSL), IO Socket SSL for Perl, CIFS,
-                                                    SMB and EFS encryption.</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <span>Soft Tape Manager</span>
-                                        <ul>
-                                            <li>
-                                                <p>Worked on SDLC for a new product STM 2.0, offered as enterprise-level
-                                                    tape
-                                                    storage management suite for Unisys Mainframe environment, enhancing
-                                                    experience
-                                                    and reducing additional expenses for client businesses.</p>
-                                            </li>
-                                            <li>
-                                                <p>Communicate effectively and partner with other SCRUM teams and
-                                                    disciplines of
-                                                    the
-                                                    overall product team including Platform Test, System Test and ID
-                                                    teams to
-                                                    deliver high quality solution from initial product design to
-                                                    production.</p>
-                                            </li>
-                                            <li>
-                                                <p>Lead architecture, design and implementation of back-end features
-                                                    using C#,
-                                                    JUnit
-                                                    Unit Testing framework, Unity Dependency Injection leveraging MVC,
-                                                    Repository,
-                                                    Factory & Strategy Design Patterns.</p>
-                                            </li>
-                                            <li>
-                                                <p>Team Leader for complete software development life cycle development
-                                                    - SPA
-                                                    UI/UX
-                                                    Design, .NET backend with SQL Database, improving Suite revenue by
-                                                    15% YoY,
-                                                    bringing in $12.6 million contract.</p>
-                                            </li>
-                                            <li>
-                                                <p>Improved DevOps process reducing build time 25% by strategically
-                                                    restructuring
-                                                    pipelines, leveraging 7 years of full software development life
-                                                    cycle
-                                                    experience
-                                                    in source control management, build processes, code analysis,
-                                                    testing and
-                                                    staging.</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
+                            <div id="org_soon" class="tab-org-links hidden">
+                                <img src="" alt="Joining Soon">
+                                <p>HOPEFULLY SOON!</p>
                             </div>
                         </div>
-                        <div class="tab-contents fade-in" id="associateengineer">
-                            <div>
-                                <ul>
-                                    <li>
-                                        <span>Soft Tape Manager</span>
-                                        <ul>
-                                            <li>
-                                                <p>Worked on initial release of STM 1.0 offered as dev-test only
-                                                    product,
-                                                    enabling
-                                                    the client business to evaluate and provide early feedback, enabling
-                                                    us to
-                                                    improve our product roadmap and features, along with enhancing
-                                                    customer
-                                                    experience.</p>
-                                            </li>
-                                            <li>
-                                                <p>Drafted initial coding standards and practices, leveraging community
-                                                    and
-                                                    industry
-                                                    peer's experience while improving the draft with the learnings
-                                                    during the
-                                                    software development lifecycle.</p>
-                                            </li>
-                                            <li>
-                                                <p>Led core tape emulation mechanism architecture and development,
-                                                    leveraging
-                                                    CIFS,
-                                                    Windows APIs, Linux Shell Scripts for data-plane, along with RESTful
-                                                    API for
-                                                    control plane. [Patent - US 15/933,662]</p>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div id="projects" class="right-element">
-                    <h1 class="sub-title">Hobbyist <span>Projects</span></h1>
-                    <h4>WHAT I DO FOR FUN & TO LEARN</h4>
-                    <div class="services-list flex-row" >
-                        <div class="service flex-col" href="https://github.com/marma-dev/openai-assistant" target="_blank" rel="noopener noreferrer">
-                            <div class="image"><img src="/images/openai.svg" alt="OpenAI Voice Assistant"></div>
-                            <div class="description">
-                                <h2>OpenAI Voice Assistant</h2>
-                                <p>A minimalist voice assistant which listens to the user voice commands,
-                                    analyzes it and responds considering the context set by previous inputs as
-                                    well, in the same language. <br/>Developed in Python and uses OpenAI GPT-3 APIs
-                                    (whisper-1 and gpt-3.5-turbo) for sound analysis and response generation,
-                                    SoundDevice for recording audio, and pyttsx3 for text-to-speech conversion. <br />
+                        <div class="org-desig">
+                            <div class="tab-designation active-tab dis-col" id="unisysworkex">
+                                <p class="tab-links active-link" onclick="openexptab('seniorengineer')">Senior Engineer
                                 </p>
-                                <a class="btn btn-primary" href="https://github.com/marma-dev/openai-assistant"
-                                    target="_blank" rel="noopener noreferrer">Explore OpenAI Voice Assistant</a>
+                                <p class="tab-links" onclick="openexptab('systemsengineer')">Systems Engineer</p>
+                                <p class="tab-links" onclick="openexptab('associateengineer')">Associate Engineer</p>
                             </div>
-                        </div>
-                        <div class="service flex-col">
-                            <div class="image"><img src="/images/bettercoder-dark.png" alt="BetterCoder.in"></div>
+                            <div class="tab-contents active-tab fade-in" id="seniorengineer">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span>Diagnostic Collection Suite</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Took ownership of analysis & articulation of complex issues &
+                                                        technologies in
+                                                        DCS
+                                                        project which collects diagnostics from various servers and
+                                                        sources
+                                                        in large
+                                                        scale distributed Mainframe OS systems environment, greatly
+                                                        reducing
+                                                        manual
+                                                        efforts and improving the ease of debugging.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Architected and led the development automated error detection
+                                                        RESTful
+                                                        API for
+                                                        DCS, thereby triggering a smart and fully automated diagnostic
+                                                        collection
+                                                        resulting in early detection & diagnosis and reduction in
+                                                        average
+                                                        issue/bug
+                                                        turnaround time by 25% thereby improving customer experience.
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>Refactored UI/UX design by optimizing & making improvements in
+                                                        JavaScript
+                                                        resulting
+                                                        in a smoother, responsive and better customer/user experience, &
+                                                        fixing UI
+                                                        bugs
+                                                        and
+                                                        issues in the process.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Firmware Version Service</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Responsible for Architecture & System Design for enhancing
+                                                        existing
+                                                        FVS
+                                                        Application,
+                                                        a monolith .NET MVC (REST API) based monitoring/reporting
+                                                        product
+                                                        primarily
+                                                        used
+                                                        to query system firmware details.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Increased the reporting output by 10X and performance by 15% by
+                                                        re-architecting
+                                                        core -
+                                                        monitoring & reporting API system design and leveraging
+                                                        algorithmic
+                                                        improvements
+                                                        & design patterns across the product.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Fostered a team culture of doing it right the first time by
+                                                        emphasizing on
+                                                        careful analysis,
+                                                        design and architecture discussions before code, and setting
+                                                        high
+                                                        coding
+                                                        standards by stringent
+                                                        code reviews & high coverage Unit Tests.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Worked with project managers, developers, quality assurance, and
+                                                        customers to
+                                                        resolve technical issues.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Trained and mentored junior developers and engineers, teaching
+                                                        skills
+                                                        in .NET
+                                                        Design Patterns,
+                                                        Virtualization & DevOps and working to improve overall team
+                                                        performance,
+                                                        involving them in
+                                                        architectural and high-level bug discussions to incorporate
+                                                        open,
+                                                        honest,
+                                                        and
+                                                        inclusive approaches to problem-solving</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>AWS, Azure & VMware Cloud Adoption</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Drove roadmap strategy and definition with guidance from senior
+                                                        leadership
+                                                        for
+                                                        AWS and Azure Cloud Platform adoption & support for Unisys CPF
+                                                        Solutions,
+                                                        leading collaboration across parnter organization to pool
+                                                        expertise
+                                                        in Cloud to provide best
+                                                        possible customer experience. This was key-criteria in
+                                                        acquisition
+                                                        of $144 million
+                                                        client contract for hybrid cloud.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Led multiple teams of 3-4 members to evaluate mainframe
+                                                        solution's
+                                                        deployment
+                                                        on native cloud, exploring possibilities & challenges in
+                                                        architecting &
+                                                        migrating OS stack on AWS, Azure & VMware Cloud.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Improved processes and customer experience by increasing
+                                                        availability
+                                                        to
+                                                        99.99% and documenting best practices learnt by leading teams to
+                                                        evaluate
+                                                        platform's BCDR capabilities & inducing complex
+                                                        fault-injections.
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
 
-                            <div class="description">
-                                <h2>BetterCoder.in</h2>
-                                <p>Upskill the core Computer Science competencies with practice roadmap for reinforcing
-                                    data-structures and algorithms with carefully curated and categorized LeetCode
-                                    questions with solutions, inspired from NeetCode.io.</p>
-                                <a class="btn btn-primary" href="https://bettercoder.in" target="_blank"
-                                    rel="noopener noreferrer">Explore BetterCoder.in</a>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-contents fade-in" id="systemsengineer">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span>Unisys Mainframe - Inter Server Communication</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Improved the architecture & security of inter-platform
+                                                        communication
+                                                        leveraging use of Schannel (TLS/SSL), IO Socket SSL for Perl,
+                                                        CIFS,
+                                                        SMB and EFS encryption.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Soft Tape Manager</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Worked on SDLC for a new product STM 2.0, offered as
+                                                        enterprise-level
+                                                        tape
+                                                        storage management suite for Unisys Mainframe environment,
+                                                        enhancing
+                                                        experience
+                                                        and reducing additional expenses for client businesses.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Communicate effectively and partner with other SCRUM teams and
+                                                        disciplines of
+                                                        the
+                                                        overall product team including Platform Test, System Test and ID
+                                                        teams to
+                                                        deliver high quality solution from initial product design to
+                                                        production.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Lead architecture, design and implementation of back-end features
+                                                        using C#,
+                                                        JUnit
+                                                        Unit Testing framework, Unity Dependency Injection leveraging
+                                                        MVC,
+                                                        Repository,
+                                                        Factory & Strategy Design Patterns.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Team Leader for complete software development life cycle
+                                                        development
+                                                        - SPA
+                                                        UI/UX
+                                                        Design, .NET backend with SQL Database, improving Suite revenue
+                                                        by
+                                                        15% YoY,
+                                                        bringing in $12.6 million contract.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Improved DevOps process reducing build time 25% by strategically
+                                                        restructuring
+                                                        pipelines, leveraging 7 years of full software development life
+                                                        cycle
+                                                        experience
+                                                        in source control management, build processes, code analysis,
+                                                        testing and
+                                                        staging.</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="tab-contents fade-in" id="associateengineer">
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <span>Soft Tape Manager</span>
+                                            <ul>
+                                                <li>
+                                                    <p>Worked on initial release of STM 1.0 offered as dev-test only
+                                                        product,
+                                                        enabling
+                                                        the client business to evaluate and provide early feedback,
+                                                        enabling
+                                                        us to
+                                                        improve our product roadmap and features, along with enhancing
+                                                        customer
+                                                        experience.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Drafted initial coding standards and practices, leveraging
+                                                        community
+                                                        and
+                                                        industry
+                                                        peer's experience while improving the draft with the learnings
+                                                        during the
+                                                        software development lifecycle.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Led core tape emulation mechanism architecture and development,
+                                                        leveraging
+                                                        CIFS,
+                                                        Windows APIs, Linux Shell Scripts for data-plane, along with
+                                                        RESTful
+                                                        API for
+                                                        control plane. [Patent - US 15/933,662]</p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                
+                </section>
+                <section id="projects" class="right-element">
+                    <div class="sectiontitle">
+                        <h1 class="sub-title">Hobbyist <span>Projects</span></h1>
+                        <h4>WHAT I DO FOR FUN & TO LEARN</h4>
+                    </div>
+                    <div class="services-list flex-row">
+                        <a href="https://github.com/marma-dev/openai-assistant" target="_blank"
+                        rel="noopener noreferrer">
+                            <div class="service flex-col" href="https://github.com/marma-dev/openai-assistant"
+                                target="_blank" rel="noopener noreferrer">
+                                <div class="image"><img src="/images/openai.svg" alt="OpenAI Voice Assistant"></div>
+                                <div class="description">
+                                    <h2>OpenAI Voice Assistant</h2>
+                                    <h5>Python | OpenAI GPT3 Whisper-1 | GPT 3.5 Turbo</h5>
+                                    <p>A minimalist voice assistant which listens to the user voice commands,
+                                        analyzes it and responds considering the context set by previous inputs as
+                                        well, in the same language. <br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://bettercoder.in" target="_blank" rel="noopener noreferrer">
+                            <div class="service flex-col">
+                                <div class="image"><img src="/images/bettercoder-dark.png" alt="BetterCoder.in"></div>
+
+                                <div class="description">
+                                    <h2>BetterCoder.in</h2><h5>.NET MVC | Razor Engine | Azure App Service | Azure SQL</h5>
+                                    <p>Upskill the core Computer Science competencies with practice roadmap for reinforcing
+                                        data-structures and algorithms with carefully curated and categorized DSA problems. </p>
+         
+                                </div>
+                            </div>
+                    </a>
+                    <a class="btn btn-primary" href="#">
                         <div class="service flex-col">
                             <div class="image"><img src="/images/url-dark.png" alt="Squeezer.in/url"></div>
                             <div class="description">
-                                <h2>URL Squeezer</h2>
-                                <p>Reduce your long urls to a much smaller unique url. Based on a 6-character hash
-                                    function
-                                    with a mix of parameters as input to make sure you get your unique url, with metrics
-                                    to
-                                    help you monitor traffic and usage.</p>
-                                <a class="btn btn-primary" href="#">Explore URL Squeezer</a>
+                                <h2>URL Squeezer</h2><h5>.NET REST API | Razor Engine | Azure App Service | Azure SQL</h5>
+                                <p>Reduce your long urls to a much smaller unique url. Based on a 6-character output hash
+                                    function                                    with to generate unique short URLs, with metrics
+                                    to                                    help you monitor traffic and usage.</p>
+   
                             </div>
                         </div>
-
+                    </a>
                     </div>
-                </div>
-                <div id="education" class="right-element">
-                    <h1 class="sub-title">My <span>Education</span></h1>
-                    <h4>WHERE I WENT TO STUDY</h4>
+                </section>
+                <section id="education" class="right-element">
+                    <div class="sectiontitle">
+                        <h1 class="sub-title">My <span>Education</span></h1>
+                        <h4>WHERE I WENT TO STUDY</h4>
+                    </div>
                     <div class="institutes-list flex-row">
                         <div class="institute flex-col">
                             <div class="image"><img src="/images/NIT_Surat_Logo.svg" alt="SVNIT-Surat"></div>
@@ -447,15 +442,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="skills" class="right-element">
-                    <h1 class="sub-title">Technologies & <span>Skills</span></h1>
-                    <h4>WHAT I BRING TO TABLE</h4>
+                </section>
+               
+                            
+                <section id="skills" class="right-element">
+                    <div class="sectiontitle">
+                        <h1 class="sub-title">Technologies & <span>Skills</span></h1>
+                        <h4>WHAT I BRING TO TABLE</h4>
+                    </div>
                     <div class="element-content">
                         <ul>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Software Architecture | System Design
+                                    Web App Architecture
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -465,7 +464,17 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Design Patterns | Low-Level Design
+                                    System Design
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="flex-col">
+                                <div class="skill">
+                                    OOP Design Patterns 
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -475,7 +484,7 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    C# | .NET MVC
+                                    C# | .NET
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -485,11 +494,11 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    RESTful APIs
+                                    MVC
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95"
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </li>
@@ -505,7 +514,27 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Identity UI Auth
+                                    Blazor SPA
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>                            
+                            <li class="flex-col">
+                                <div class="skill">
+                                    RESTful APIs
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>                            
+                            <li class="flex-col">
+                                <div class="skill">
+                                    Identity OAuth 2.0
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -515,7 +544,7 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Cloud Infrastructure Planning
+                                    Cloud IaaS | PaaS Planning
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -525,7 +554,7 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Cloud Migration Roadmap Planning
+                                    Cloud WebApp Migration
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -535,7 +564,7 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
-                                    Cloud BCDR
+                                    Cloud HA | DR
                                 </div>
                                 <div class="progress">
                                     <div class="progress-back"></div>
@@ -543,27 +572,7 @@
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </li>
-                            <li class="flex-col">
-                                <div class="skill">
-                                    REACT.js
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-back"></div>
-                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </li>
-                            <li class="flex-col">
-                                <div class="skill">
-                                    Python
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-back"></div>
-                                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                
-                            </li>
+                            
                             <li class="flex-col">
                                 <div class="skill">
                                     SQL Server
@@ -586,6 +595,38 @@
                             </li>
                             <li class="flex-col">
                                 <div class="skill">
+                                    GitLab | Azure DevOps
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="flex-col">
+                                <div class="skill">
+                                    JavaScript | REACT.js
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </li>
+                            <li class="flex-col">
+                                <div class="skill">
+                                    Python
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-back"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+
+                            </li>
+                            <li class="flex-col">
+                                <div class="skill">
                                     Leadership | Team Leader
                                 </div>
 
@@ -605,17 +646,7 @@
                                         aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </li>
-                            <li class="flex-col">
-                                <div class="skill">
-                                    DevOps
-                                </div>
-
-                                <div class="progress">
-                                    <div class="progress-back"></div>
-                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </li>
+                            
                             <li class="flex-col">
                                 <div class="skill">
                                     Agile | SCRUM
@@ -629,11 +660,13 @@
 
                         </ul>
                     </div>
-                </div>
-                <div id="achievements" class="right-element flex-col">
+                </section>
+                <section id="achievements" class="right-element flex-col">
                     <div class="col achievements">
-                        <h1 class="sub-title"><span>Achievements</span></h1>
-                        <h4>WHERE I SHINE</h4>
+                        <div class="sectiontitle">
+                            <h1 class="sub-title"><span>Achievements</span></h1>
+                            <h4>WHERE I SHINE</h4>
+                        </div>
                         <ul>
                             <li>Silver Recognition Award for exceeding performance expectations</li>
                             <li>Patent for Inter-Server Control & Communication Mechanism</li>
@@ -642,8 +675,10 @@
                         </ul>
                     </div>
                     <div class="col interests">
-                        <h1 class="sub-title">Interests</h1>
-                        <h4>OUT OF OFFICE</h4>
+                        <div class="sectiontitle">
+                            <h1 class="sub-title">Interests</h1>
+                            <h4>OUT OF OFFICE</h4>
+                        </div>
                         <ul>
                             <li>Travelling | Road Trips</li>
                             <li>Photography</li>
@@ -653,38 +688,42 @@
                             <li>Table-Tennis</li>
                         </ul>
                     </div>
-                </div>
-                <div id="contact" class="flex-col">                    
-                        <div class="col">
+                </section>
+                <section id="contact" class="flex-col">
+                    <div class="col">
+                        <div class="sectiontitle">
                             <h1 class="sub-title">I'd love to hear <br />
                                 from <span>you.</span></h1>
                             <h4>LET'S CONNECT</h4>
                         </div>
-                        <div class="connect" >
-                            <p><a href="mailto:manishranjanmahanta@gmail.com">Email: manishranjanmahanta@gmail.com</a>
-                            </p>
-                            <p><a href="tel:+918000537300">Mobile: (+91) 8000537300</a></p>
-                            <div id="socials">
-                                <a href="https://github.com/marma-dev" target="_blank" rel="noopener noreferrer">
-                                    <img src="/images/github.svg" alt="GitHub.com">
-                                </a>
-                                <a href="https://in.linkedin.com/in/manish-ranjan-mahanta" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <img src="/images/linkedin.svg" alt="Linkedin.com">
-                                </a>
-                            </div>
-                            <div>
-                                <a class="button resumelink" href="https://">Download Resume</a>
-                            </div>
-                        </div> 
-                </div>
-                <div id="footer">
-                    <span>© 2024</span> | Created and Maintained by:  Manish Ranjan Mahanta
-                </div>
+                    </div>
+                    <div class="connect">
+                        <p><a href="mailto:manishranjanmahanta@gmail.com">Email: manishranjanmahanta@gmail.com</a>
+                        </p>
+                        <p><a href="tel:+918000537300">Mobile: (+91) 8000537300</a></p>
+                        <div class="socials">
+                            <a class="svg_github" href="https://github.com/marma-dev" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/images/github.svg" alt="GitHub.com">
+                            </a>
+                            <a class="svg_linkedin" href="https://in.linkedin.com/in/manish-ranjan-mahanta"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="/images/linkedin.svg" alt="Linkedin.com">
+                            </a>
+                        </div>
+                        <div>
+                            <a class="button button-primary resumelink" href="/resumes/Manish_Ranjan_Mahanta-Resume.pdf">Download Resume</a>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <span>© 2024</span> | Created and Maintained by: Manish Ranjan Mahanta
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>
-    <script src="marmadevscript.js">       
+    <script src="marmadevscript.js">
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
