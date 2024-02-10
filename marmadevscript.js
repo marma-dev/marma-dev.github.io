@@ -17,7 +17,14 @@ var orgDict = {
     walmart:""
 };
 
-
+function toTitleCase(str) {
+    return str.replace(
+        /\b\w+/g,
+      function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      }
+    );
+  }
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const org = urlParams.get('org').toLowerCase();
@@ -34,7 +41,7 @@ function setOrgElements(org)
     orgsoon.style.setProperty('display', 'block');
     orgsoon.getElementsByTagName('img').item(0).setAttribute('src','/images/org/' + org + '.svg');        
     for (resumebutton of resumebuttons)
-        resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-'+ org +'.pdf');
+        resumebutton.setAttribute('href', '/resumes/Manish_Ranjan_Mahanta-Resume-'+ toTitleCase(org) +'.pdf');
 }
 
 function setOrgTheme(org)
