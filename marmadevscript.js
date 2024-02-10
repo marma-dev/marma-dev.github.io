@@ -3,8 +3,10 @@ var orgDict = {
     amazon: "--bg-color:#070d0e; --box-color:#232F3E;--font-highlight:#ff9900; --navbar-color:#131921; --color-char1:#ff9900; --color-char2:#ff9900; --color-char3:#ff9900; --color-char4:#ff9900; --color-char5:#ff9900; --color-char6:#ff9900;",
     apple: "",
     commonwealth: "--font-highlight:#ffcc00;",
+    flipkart:"",
     google: "--font-highlight:#d62d20; --navbar-color:rgb(37,36,35); --color-char1:#0057e7; --color-char2:#d62d20; --color-char3:#ffa700; --color-char4:#0057e7; --color-char5:#008744; --color-char6:#d62d20;",
     harman: "",
+    ibm:"--font-highlight:rgb(0,120,212);",
     intel: "--box-color:#232F3E;--font-highlight:#00C7FD; --navbar-color:#131921; --color-char1:#00C7FD; --color-char2:#0068B5; --color-char3:#0068B5; --color-char4:#0068B5; --color-char5:#0068B5; --color-char6:#0068B5;",
     microsoft: " --font-highlight:rgb(0,120,212); --navbar-color:rgb(37,36,35); --box-color:rgb(59,58,57)",
     o9:"",
@@ -12,12 +14,13 @@ var orgDict = {
     philips:"",
     qualcomm:"",
     uber:"",
+    walmart:""
 };
 
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const org = urlParams.get('org');
+const org = urlParams.get('org').toLowerCase();
 if(org in orgDict)
 {
     setOrgElements(org);
