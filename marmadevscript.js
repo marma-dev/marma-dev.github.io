@@ -27,7 +27,7 @@ function toTitleCase(str) {
   }
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const org = urlParams.get('org');
+var org = urlParams.get('org');
 if(org!==null)
 {
     org = org.toLowerCase();
