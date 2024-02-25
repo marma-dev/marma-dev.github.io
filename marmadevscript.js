@@ -27,11 +27,16 @@ function toTitleCase(str) {
   }
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-const org = urlParams.get('org').toLowerCase();
-if(org in orgDict)
+const org = urlParams.get('org');
+if(org!==null)
 {
-    setOrgElements(org);
+    org = org.toLowerCase();
+    if(org in orgDict)
+    {
+        setOrgElements(org);
+    }
 }
+
 
 function setOrgElements(org)
 {
