@@ -18,6 +18,7 @@ var orgDict = {
     philips:"",
     qualcomm:"",
     uber:"",
+    visa:"--font-highlight:#00579f;",
     walmart:""
 };
 
